@@ -1,14 +1,14 @@
 /*replier background-color: #eee*/
+@import url("https://fonts.googleapis.com/css?family=Francois+One");
+
 
 /* --------------------------- framework -- */
 
 #back {
   float: right;
-  margin-top: 30%;
   background-color: #9c2626;
   border-radius: 4px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 30% 5px 2px 5px;
   min-height: 250px;
 }
 
@@ -17,7 +17,7 @@
   font-weight: bold;
   color: whitesmoke;
   margin-top: 5px;
-
+  font-family: 'Francois One', sans-serif;
 }
 
 #content {
@@ -52,27 +52,29 @@
 
 /* --------------------------- changeable area -- */
 
-#content p {
+#cover-msg {
   font-weight: bold;
   color: #666;
   font-size: 20px;
   position: absolute;
 }
 
-#intro-msg {
+/*#intro-msg {
   visibility: hidden;
+}*/
+
+#content p {
+  color: #666;
+  display: inline;
 }
 
-.agent-name {
+#content span {
   font-weight: bold;
   color: black;
 }
 
-.agent-message {
-  color: #666;
-}
-
 #chat-now {
+  font-family: 'Francois One', sans-serif;
   font-size: 13px;
   font-weight: bold;
   text-decoration: underline;
@@ -83,6 +85,7 @@
 
 form {
   visibility: hidden;
+  display: inline;
 }
 
 input {
@@ -92,9 +95,12 @@ input {
   width: 60%;
 }
 
-button {
+#button {
+  font-family: 'Francois One', sans-serif;
   font-weight: bold;
   color: white;
   background-color: #9c2626;
   border: 1px solid white;
+  width: 20%;
 }
+

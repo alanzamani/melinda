@@ -14,40 +14,33 @@
 
     <!-------------------- & CHAT AREA -->
     <div id="content">
-        <p id="cover-msg" class="text-capitalize">start chatting by clicking "chat now"</p>
-        <div id="intro-msg">
+        <div id="cover-msg" class="text-capitalize">start chatting by clicking "chat now"</div>
+        <!--<div id="intro-msg">
             <span class="agent-name">Mary: </span>
             <span class="agent-message">"Hi Nicolas this is Mary from Abank.
                                     How may I help ypu today?"</span>
-        </div>
+        </div>-->
     </div>
     <!-------------------- & CHAT AREA -->
 
     <div id="triangle-topleft"></div>
     <div id="inner-triangle-topleft"></div>
     <br>
-    <p id="chat-now" onclick="toggle()">Chat now</p>
+    <p id="chat-now">Chat now</p>
     <br>
 
     <!-------------------- * USER INPUT AREA -->
     <form id="form">
-        <input type="text">
-        <button>send</button>
+        <input type="text" id="in">
+        <input type="submit" value="send" id="button">
     </form>
     <!-------------------- * USER INPUT AREA -->
 
 </div>
 <!-------------------- / RED BACK -->
 
-<script>
-    function toggle() {
-        document.getElementById("chat-now").style.visibility = "hidden";
-        document.getElementById("cover-msg").style.visibility = "hidden";
-        document.getElementById("intro-msg").style.visibility = "visible";
-        document.getElementById("form").style.visibility = "visible";
-        document.getElementById("form").style.visibility = "visible";
-    }
-</script>
+
+<script src="script/jquery-3.2.1.min.js"></script>
 <script src="script/script.js"></script>
 </body>
 </html>
