@@ -1,3 +1,5 @@
+/* -- framework -- */
+
 #back {
   float: right;
   margin-top: 30%;
@@ -21,12 +23,6 @@
   border-radius: 5px;
 }
 
-#content p {
-  font-weight: bold;
-  color: #666;
-  font-size: 20px;
-}
-
 #triangle-topleft {
   width: 0;
   height: 0;
@@ -36,7 +32,30 @@
   margin-right: 15px;
 }
 
-#chat {
+
+/* -- changeable -- */
+
+#content p {
+  font-weight: bold;
+  color: #666;
+  font-size: 20px;
+  position: absolute;
+}
+
+#intro-msg {
+  visibility: hidden;
+}
+
+.agent-name {
+  font-weight: bold;
+  color: black;
+}
+
+.agent-message {
+  color: #666;
+}
+
+#chat-now {
   font-size: 13px;
   font-weight: bold;
   text-decoration: underline;
