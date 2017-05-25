@@ -1,4 +1,6 @@
-/* -- framework -- */
+/*replier background-color: #eee*/
+
+/* --------------------------- framework -- */
 
 #back {
   float: right;
@@ -6,6 +8,8 @@
   background-color: #9c2626;
   border-radius: 4px;
   margin-right: 5px;
+  margin-left: 5px;
+  min-height: 250px;
 }
 
 #webchat {
@@ -21,19 +25,32 @@
   border: 2px solid white;
   padding: 20px 20px;
   border-radius: 5px;
+  min-height: 150px;
+  text-align: left;
 }
 
 #triangle-topleft {
-  width: 0;
-  height: 0;
-  border-top: 20px solid #dfdfdf;
-  border-right: 20px solid transparent;
   float: right;
   margin-right: 15px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid white;
+  border-right: 20px solid transparent;
+}
+
+#inner-triangle-topleft {
+  position: relative;
+  float: right;
+  width: 0;
+  height: 0;
+  top: -3px;
+  right: -20px;
+  border-top: 18px solid #dfdfdf;
+  border-right: 18px solid transparent;
 }
 
 
-/* -- changeable -- */
+/* --------------------------- changeable area -- */
 
 #content p {
   font-weight: bold;
@@ -80,21 +97,4 @@ button {
   color: white;
   background-color: #9c2626;
   border: 1px solid white;
-}
-
-
-
-
-
-/*replier background-color: #eee*/
-
-#arrow-left {
-  position:absolute;
-  width:100px;
-  height:100px;
-  left:50px;
-  background:black;
-  -webkit-transform:rotate(45deg);
-  transform:rotate(45deg);
-  border-radius:10px;
 }

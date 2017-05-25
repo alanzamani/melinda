@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<div id="back" class="col-lg-3 col-md-4 col-sm-6 col-xs-11">
+
+<!-------------------- \ RED BACK -->
+<div id="back" class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
     <p id="webchat" class="text-capitalize">webchat</p>
+
+    <!-------------------- & CHAT AREA -->
     <div id="content">
         <p id="cover-msg" class="text-capitalize">start chatting by clicking "chat now"</p>
         <div id="intro-msg">
@@ -16,19 +20,25 @@
             <span class="agent-message">"Hi Nicolas this is Mary from Abank.
                                     How may I help ypu today?"</span>
         </div>
-
     </div>
+    <!-------------------- & CHAT AREA -->
+
     <div id="triangle-topleft"></div>
+    <div id="inner-triangle-topleft"></div>
     <br>
     <p id="chat-now" onclick="toggle()">Chat now</p>
     <br>
+
+    <!-------------------- * USER INPUT AREA -->
     <form id="form">
         <input type="text">
         <button>send</button>
     </form>
-
+    <!-------------------- * USER INPUT AREA -->
 
 </div>
+<!-------------------- / RED BACK -->
+
 <script>
     function toggle() {
         document.getElementById("chat-now").style.visibility = "hidden";
