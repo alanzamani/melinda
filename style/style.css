@@ -21,6 +21,12 @@
   border-radius: 5px;
 }
 
+#content p {
+  font-weight: bold;
+  color: #666;
+  font-size: 20px;
+}
+
 #triangle-topleft {
   width: 0;
   height: 0;
@@ -36,12 +42,18 @@
   text-decoration: underline;
   color: whitesmoke;
   float: right;
+  cursor: pointer;
+}
+
+form {
+  visibility: hidden;
 }
 
 input {
   border: none;
   height: 30px;
   margin-bottom: 15px;
+  width: 60%;
 }
 
 button {
@@ -55,7 +67,7 @@ button {
 
 
 
-
+/*replier background-color: #eee*/
 
 #arrow-left {
   position:absolute;
