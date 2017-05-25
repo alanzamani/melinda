@@ -1,0 +1,69 @@
+#back {
+  float: right;
+  margin-top: 30%;
+  background-color: #9c2626;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+#webchat {
+  font-size: 15px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 5px;
+
+}
+
+#content {
+  background-color: #dfdfdf;
+  border: 2px solid white;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+#triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 20px solid #dfdfdf;
+  border-right: 20px solid transparent;
+  float: right;
+  margin-right: 15px;
+}
+
+#chat {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: whitesmoke;
+  float: right;
+}
+
+input {
+  border: none;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+button {
+  font-weight: bold;
+  color: white;
+  background-color: #9c2626;
+  border: 1px solid white;
+}
+
+
+
+
+
+
+
+#arrow-left {
+  position:absolute;
+  width:100px;
+  height:100px;
+  left:50px;
+  background:black;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+  border-radius:10px;
+}
