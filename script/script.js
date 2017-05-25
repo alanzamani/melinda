@@ -21,16 +21,16 @@ $("document").ready(function() {
     $("#chat-now").click(function () {
         $("#chat-now").css("visibility", "hidden");
         $("#cover-msg").remove(0);
-        //$("#cover-msg").html("");
         $("#form").css("visibility", "visible");
         addMsg("agent", "Mary: ", '"Hi Nicolas this is Mary from Abank. How may I help ypu today?"', 1000);
     });
 
 
-    $("#form").submit(function () {
+    $("#form").submit(function (e) {
+        e.preventDefault();
         var hook = $("#in").val();
-        //alert(hook);
-        addMsg("client", 'Nicholas: "', hook+'"', 0);
+        $("#in").val("");
+        addMsg("client", 'Nicholas: ', '"'+hook+'"', 0);
         addMsg("agent", 'Mary: "', 'To reset your password just click' +
             'on the My details menu. Once you have clicked the menu a new page will' +
             'appear Select the link Change password". om this link it will take' +
